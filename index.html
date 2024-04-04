@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payroll Management System</h1>
+        <div id="employeeForm">
+            <h2>Enter Employee Details</h2>
+            <input type="text" id="employeeId" placeholder="Employee ID" required><br>
+            <input type="text" id="employeeName" placeholder="Employee Name" required><br>
+            <input type="text" id="department" placeholder="Department" required><br>
+            <input type="text" id="position" placeholder="Position" required><br>
+            <input type="number" id="basicSalary" placeholder="Basic Salary" required><br>
+            <input type="number" id="allowances" placeholder="Allowances" required><br>
+            <input type="email" id="email" placeholder="Email Address" required><br>
+            <input type="tel" id="phoneNumber" placeholder="Phone Number" required><br>
+            <input type="date" id="dob" placeholder="Date of Birth" required><br>
+            <input type="text" id="address" placeholder="Address" required><br>
+            <select id="gender" required>
+                <option value="" disabled selected hidden>Choose Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br>
+            <input type="date" id="hireDate" placeholder="Hire Date" required><br>
+            <button onclick="addEmployee()">Add Employee</button>
+        </div>
+        <div id="salarySlip" class="hidden">
+            <h2>Salary Slip</h2>
+            <div id="salaryDetails">
+                <p><strong>Gross Salary:</strong> <span id="grossSalary"></span></p>
+                <p><strong>Deductions:</strong> <span id="deductions"></span></p>
+                <p><strong>Net Salary:</strong> <span id="netSalary"></span></p>
+                <p><strong>Tax:</strong> <span id="tax"></span></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Designed and developed by Hariharanath, Deekshith, Pratham Pandit, and Sudeep</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
